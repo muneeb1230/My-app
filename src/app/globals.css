@@ -2,26 +2,155 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body{
+  background-color: black;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+h1 {
+color: white;
+font-size: 24px;
+
+font-weight: 400;
+}
+h2{
+  color: rgb(50, 169, 50);
+  font-size: 20px;
+  font-weight: 400;
+}
+p{
+  color: lightgray
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+li{
+  color: cyan
+}
+button{
+  color: cyan
+}
+.header{
+  position:  relative;
+
+}
+.header .container{
+  margin: 0 auto;
+  max-width: 84%;
+}
+.header .navbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.header .menu ul{
+  display: flex;
+  gap: 30px;
 }
+.header ul li:hover{
+  color: rgb(203, 233, 233);
+  transition: 0.3s;
+}
+
+.card{
+  position: relative;
+
+}
+.card .container{
+  margin: 0 auto;
+  max-width: 84%;
+}
+.card .row{
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.card img{
+  width: 100%;
+  padding: 10px;
+  border-radius: 2px;
+}
+.card .box{
+  border: 1px solid rgb(220, 216, 211);
+  width: 33.3%;
+  border-radius: 10px;
+  /* height: 33.33%; */
+  padding: 5px;
+  gap: 20px;
+}
+.card h2{
+  padding: 10px;
+}
+.card p{
+  padding: 8px;
+}
+.card .btn{
+  padding: 6px;
+  border: 1px solid cyan;
+  border-radius: 12px;
+  font-size: 12px;
+  margin-left: 10px;
+  margin-top: 10px;
+
+}
+
+#box-6{
+  margin-top: 10px;
+}
+
+.footer{
+  position: relative;
+  /* margin-top: 40px; */
+  text-align: center;
+  padding: 60px 0;
+}
+.footer .container{
+  margin: 0 auto;
+  max-height: 84%;
+}
+.footer .row{
+  display:  flex;
+  justify-content: space-between;
+}
+.footer .box-ft{
+  max-width: 30%;
+}
+
+.footer .links .img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer img{
+  max-width: 100px;
+}
+#twit{
+  max-width: 74px;
+}
+
+.footer h2{
+  margin-bottom: 16px;
+}
+.footer .footer-botm{
+  color: darkgray;
+  text-align: center;
+  margin-left: 76px;
+}
+
+.footer hr{
+  width: 250px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 42%;
+
+}
+
+.card img {
+  transition: transform 0.4s ease;
+}
+
+.card .box:hover img {
+  transform: scale(1.1); 
+  /* transition: transform 0.4s ease; */
+}
+
+
